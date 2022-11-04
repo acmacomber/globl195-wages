@@ -1,0 +1,33 @@
+---
+title: 'GLOBL 195 Homework #7'
+author: "Anya Macomber"
+date: last-modified
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Objective:** Download R and RStudio, load a dataset, and produce a basic summary.
+
+1.  Download R and RStudio to your computer. Follow directions here: <https://youtu.be/TFGYlKvQEQ4>
+2.  Go to [this link and download the dataset.](https://github.com/acmacomber/globl195-wages/blob/851891c2f8af938076332526c98c1fd18e0bc81a/wages.csv.zip) It is quite large. Make sure you "unzip" the file by trying to open it. The resulting file should be called wages.csv.
+3.  Open a new script in RStudio and run the following commands (highlight and click "run"---you must run each line individually).
+
+```{r}
+install.packages("tidyverse")
+install.packages("ggplot2")
+library(tidyverse)
+library(ggplot2)
+
+```
+
+4.  Then, load in the data. Note: the filepath will be different for your computer.
+    -   For windows: [How to Find a Filepath](https://www.wikihow.com/Find-a-File%27s-Path-on-Windows)
+
+    -   For Mac: [How to Find a Filepath](https://macpaw.com/how-to/get-file-path-mac)
+
+```{r}
+data <- read.csv("filepath/wages.csv")
+```
